@@ -37,9 +37,3 @@ client.on('interactionCreate', async interaction => {
 		console.error(error);
 		await interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true })}
 });
-client.on("messageCreate", async message => {
-	if (message.content==('Hello there')){
-		await message.reply('https://tenor.com/view/general-kenobi-kenobi-general-hello-there-star-wars-gif-13723705');
-	}
-	else return;
-})
